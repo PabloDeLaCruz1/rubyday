@@ -1,4 +1,4 @@
-def salesTax(number)
+def sales_tax(number)
     if number.is_a?(Integer)
         return number + number * 0.088
     elsif
@@ -6,5 +6,5 @@ def salesTax(number)
     end
 end
 
-what = salesTax("hello")
+what = sales_tax("hello")
 puts what.class

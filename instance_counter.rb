@@ -1,4 +1,4 @@
-def mostOccurrences(string)
+def most_occurrences(string)
     hash = Hash.new 0
     string.downcase.delete(' ').split('').each do |letter|
         hash[letter] += 1
@@ -8,5 +8,5 @@ end
 
 bob = "Bob is a very nice gardener"
 
-puts mostOccurrences(bob)
+puts most_occurrences(bob)
 
