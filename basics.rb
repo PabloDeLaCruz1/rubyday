@@ -21,6 +21,41 @@
 # sum(1,2,4)
 
 colors = ["red", "white", "blue"]
-red, white, blue = colors
+names = ["pablo", "thegreat", "eljefe"]
 
-puts red
+colors_and_names = {
+    :colors => nil,
+    :names => nil
+}
+colors_and_names[names] = colors
+colors_and_names[names] = names
+
+# for element in colors
+#     puts element
+# end
+# for element in names
+#     puts element
+# end
+
+colors_and_names.each do |element|
+    puts "My key: #{element} --- My val:"
+end
+# class Artsy  
+#     def initialize(colors, names)  
+#       # Instance variables  
+#       @breed = colors  
+#       @name = names  
+#     end  
+    
+#     def showColors  
+#       puts 'Ruff! Ruff!'  
+#     end  
+    
+#     def showNames  
+#       puts "hhhh" 
+#     end  
+#   end  
+
+# art = Artsy.new(colors, red)
+
+# puts art
